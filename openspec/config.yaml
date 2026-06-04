@@ -1,0 +1,19 @@
+schema: spec-driven
+
+context: |
+  FocusLens AI — real-time classroom attention tracking.
+  Tech stack: Python (OpenCV, MediaPipe, NumPy), FastAPI + WebSockets, React + Tailwind.
+  Architecture: Frontend → Backend → AI Engine. Routes thin; services for session/attention;
+  websocket handlers separate; ai-engine has face, eyes, drowsiness, head_pose, scoring modules.
+  MVP: face detection, eye tracking, drowsiness, attention score, live analytics.
+  Constraints: real-time processing, modular layout, separated frontend/backend/AI.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
